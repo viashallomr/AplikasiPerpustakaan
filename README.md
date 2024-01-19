@@ -1,7 +1,7 @@
 # APLIKASI PERPUSTAKAAN
 ## KELOMPOK 1
 
-![Aplikasi Perpustakaan](https://github.com/v27isr/AplikasiPerpustakaan/assets/133020176/2714b2e8-9638-4d2f-9ede-844569135cb3)
+![Copy of Template Github README](https://github.com/v27isr/AplikasiPerpustakaan/assets/133020176/6ee9db78-916a-43d2-9a19-acae12d6dda0)
 
 ### 🌐Tentang Project:
 ----------------
