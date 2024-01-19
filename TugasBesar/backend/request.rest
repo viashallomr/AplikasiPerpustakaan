@@ -1,0 +1,181 @@
+//Create a user
+POST http://localhost:5000/users
+Content-Type:application/json
+
+{
+    "nama": "ichaa",
+    "email": "ichaa@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+
+
+###
+//get All Users
+GET http://localhost:5000/users
+
+###
+//Get Single User
+GET http://localhost:5000/users/53b00cf0-15a9-40c6-b2b7-9761da587dd1
+
+
+###
+//Update User
+PATCH http://localhost:5000/users/fc731cef-9bc5-4ed0-82ce-b02ba7160abb
+Content-Type:application/json
+
+{
+    "nama": "Rahel Updated",
+    "email": "rahel@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "admin2"
+}
+
+###
+//Delete User
+DELETE http://localhost:5000/users/050cc26a-1edb-4151-8a09-29d0c72c5cd5
+
+###
+//Login User
+POST http://localhost:5000/login
+Content-Type:application/json
+
+{
+    "email": "ichaa@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type:application/json
+
+{
+    "email": "rahel@gmail.com",
+    "password": "123456"
+}
+
+###
+// User
+GET  http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
+
+###
+//get All Bukus
+GET http://localhost:5000/bukus
+
+###
+//get Single Bukus
+GET http://localhost:5000/bukus/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+
+###
+//Post Data Buku
+POST http://localhost:5000/bukus
+Content-Type:application/json
+
+{
+    "judul": "Web Service Praktik 2",
+    "penulis": "Afwan Angga",
+    "penerbit": "UTY",
+    "kategori": "Komputer",
+    "tahunTerbit": 2021,
+    "stok": 7
+}
+
+###
+//Post Data Buku
+PATCH  http://localhost:5000/bukus/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+Content-Type:application/json
+
+{
+    "judul": "Web Service Praktik 2 baru",
+    "penulis": "Afwan Angga",
+    "penerbit": "UTY",
+    "kategori": "Komputer",
+    "tahunTerbit": 2021,
+    "stok": 6
+}
+
+###
+//Delete Data Buku
+DELETE http://localhost:5000/bukus/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+Content-Type:application/json
+
+###
+//get All Anggota
+GET http://localhost:5000/anggotas
+
+###
+//get Single Anggota
+GET http://localhost:5000/anggotas/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+
+###
+//Post Data Anggota
+POST http://localhost:5000/anggotas
+Content-Type:application/json
+
+{
+    "nama": "ichami",
+    "alamat": "Yogya",
+    "email": "ichami@gmmail.com"
+}
+
+###
+//Post Data Anggota
+PATCH  http://localhost:5000/anggotas/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+Content-Type:application/json
+
+{
+    "nama": "ichami",
+    "alamat": "Yogya",
+    "email": "ichami@gmmail.com"
+}
+
+###
+//Delete Data Anggota
+DELETE http://localhost:5000/anggotas/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+Content-Type:application/json
+
+
+###
+//get All Peminjaman
+GET http://localhost:5000/peminjamans
+
+###
+//get Single Peminjaman
+GET http://localhost:5000/peminjamans/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+
+###
+//Post Data Peminjaman
+POST http://localhost:5000/peminjamans
+Content-Type:application/json
+
+{
+    "tgl_pinjam": "2023-12-29",
+    "tgl_kembali": "2023-12-31",
+    "bukuId": 1,
+    "anggotaId": 1
+}
+
+###
+//Post Data Peminjaman
+PATCH  http://localhost:5000/peminjamans/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+Content-Type:application/json
+
+{
+    "judul": "Web Service Praktik 2 baru",
+    "penulis": "Afwan Angga",
+    "penerbit": "UTY",
+    "kategori": "Komputer",
+    "tahunTerbit": 2021,
+    "stok": 6
+}
+
+###
+//Delete Data Peminjaman
+DELETE http://localhost:5000/peminjamans/c4d4e3b2-d1ae-49c3-8a77-bf085e52e459
+Content-Type:application/json
